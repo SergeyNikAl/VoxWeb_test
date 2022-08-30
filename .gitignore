@@ -135,4 +135,4 @@ dmypy.json
 news/static
 
 # chromedrive
-parser/chromedrive.exe
+parser/chromedriver.exe
