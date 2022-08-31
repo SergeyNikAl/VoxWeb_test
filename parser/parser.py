@@ -130,9 +130,7 @@ def fetch_ozon():
                     description=enc_text(
                         value.find('h3', class_='news-card__title').text
                     ),
-                    url=enc_text(
-                        value.find('a').get('href')
-                    ),
+                    url=None,
                     tags=list(map(
                         lambda tag: enc_text(tag.text), value.find_all(
                             'div', class_='news-card__mark'
